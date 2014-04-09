@@ -1,1 +1,36 @@
-css
+circle { 
+  stroke:  black ;
+  stroke-width: 2px;
+  fill: red;
+}
+
+#main {
+	width: 100%;
+}
+
+#plotright {
+	float:left;
+	width: 50%;
+}
+
+#plotleft {
+	float:left;
+	width: 50%;
+}
+
+.title {
+	font-size: 20px;
+	
+}
+
+
+
+.node {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+.link {
+  stroke: #999;
+  stroke-opacity: .6;
+}
