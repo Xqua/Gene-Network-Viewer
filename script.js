@@ -40,9 +40,12 @@ var selectedNodes = []
 
 function update()
 {
-
 	curNodes = get_nodes();
 	curLinks = get_links();
+
+	net.nodes(curNodes);
+	net.links(curLinks);
+	
 }
 
 function get_nodes()
@@ -76,7 +79,7 @@ function get_links()
 
 
 
-d3.json("network.json", function(error, graph) {
+var net = d3.json("network.json", function(error, graph) {
   force
       .nodes(graph.nodes)
       .links(graph.links)
